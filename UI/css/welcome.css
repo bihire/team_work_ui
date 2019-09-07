@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Allerta+Stencil|Baloo|Mitr|Roboto|Sigmar+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Manjari&display=swap');
 body {
     margin: 0;
     padding: 0;
@@ -143,7 +143,7 @@ input#email,#username{
 .welcome {
     font-size: 34px;
     /* font-weight: 800; */
-    font-family: 'Mitr', sans-serif;
+    font-family: 'Manjari', sans-serif;
 }
 .welcome-info {
     text-align: center;

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Allerta+Stencil|Baloo|Mitr|Roboto|Sigmar+One&display=swap');
+
+
+body {
+     font-family: 'Roboto', sans-serif;
+    color: #555;
+    background: #fff;
+    margin: 0;
+}
+
+.containe {
+    padding: 1em;
+    max-width: 873px;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 200px;
+
+}
+
+.quote {
+    font-weight: 100;
+    font-size: 2em;
+    margin-bottom: 50px; 
+    color: #000;
+    grid-column: 1 / -1;
+}
+
+
+.article-card:hover {
+    border: 0.6px solid #3A2EFF;
+    cursor: pointer;
+
+}
+
+form input {
+    position: relative;
+        width: 100%;
+        padding: 1em;
+        /* border-radius: 30px; */
+        /* border: 1px solid black; */
+     
+        outline: none;
+        position: relative;
+        box-sizing: border-box;
+        border-width: 0;
+           border-bottom: 2px solid #C2E2FE;
+    }
+    textarea{
+        width: 100%;
+        min-height: 200px;
+        max-height: 350px;
+        padding: 37px 15px 20px 15px;
+        box-sizing: border-box;
+        border: 2px solid #C2E2FE;
+    }
+    form input:focus {
+        border-bottom: 2.2px solid #4EB8ED;
+    }
+.row {
+    margin-bottom: 30px;
+}
+form input.btn{
+    width: fit-content;
+    padding: 10px 40px;
+    border: none;
+    color: #fff;
+    background: #4F62E8;
+    cursor: pointer;
+}
+/* .bro {
+    display: flex;
+    justify-content: space-between;
+} */
+    /* form {
+        border: 1px solid red;
+    } */

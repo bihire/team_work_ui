@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Allerta+Stencil|Baloo|Mitr|Roboto|Sigmar+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Manjari&display=swap');
 
 
 body {
@@ -34,6 +35,7 @@ body {
     margin-bottom: 50px; 
     color: #000;
     grid-column: 1 / -1;
+       font-family: 'Manjari', sans-serif;
 }
 
 img {
@@ -116,6 +118,29 @@ a:last-child:focus {
  
 
 
+ .float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#fff;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+.float:focus{
+  color: #029AE5;
+  border-width: 0;
+  border: 2px solid #029AE5;
+  background: #fff;
+}
+
+.my-float{
+  margin-top:22px;
+  color: #029AE5;
+}
 
  /* nav bar */
  /* colors -> https://coolors.co/e54b4b-ebebd3-464655-e4b363-e8e9eb */
@@ -151,6 +176,12 @@ header::after {
   margin: 0;
   text-transform: uppercase;
   font-weight: 700;
+}
+
+.logo:hover {
+  cursor: pointer;
+  border: 1px solid orange;
+  color: orange;
 }
 
 .logo span {
@@ -194,11 +225,14 @@ header::after {
   text-transform: capitalize;
   text-decoration: none;
 }
-
-.site-nav a:hover,
-.site-nav a:focus {
-  background: #E4B363;
+/* 
+#side-nav-item {
+  background: red;
+} */
+.site-nav li:hover {
+  /* background: #E4B363; */
   color: #464655;
+  border: 1px solid red;
 }
 
 .site-nav--icon {
