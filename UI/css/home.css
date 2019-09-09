@@ -20,6 +20,23 @@ body {
     margin-top: 100px;
 
 }
+.author-info {
+  grid-column: 1 / -1;
+  /* border: 1px solid red; */
+  padding: 10px 20px;
+}
+
+h4#user_name {
+    text-decoration: underline;
+    color: #000;
+    text-underline-position: under;
+    margin-bottom: 4px;
+}
+p#email {
+  margin: 0;
+  font-size: 0.9em;
+  color: #3A2EFF;
+}
 
 .title {
     font-weight: 100;
@@ -37,20 +54,23 @@ body {
     grid-column: 1 / -1;
        font-family: 'Manjari', sans-serif;
 }
+p#quote {
+    font-size: 20px;
+}
 
 img {
     width: 100%;
 }
 .article-card:hover {
     border: 0.6px solid #3A2EFF;
-    cursor: pointer;
+    /* cursor: pointer; */
 
 }
 .article-card {
     border: 0.6px solid rgb(130, 205, 228);
     border-radius: 5px;
     height: 309px;
-    padding: 1.5rem;
+    padding: 0;
     position: relative;
     box-sizing: border-box;
     background: #fff;
@@ -67,32 +87,26 @@ p {
   position: relative;
   z-index: 3;
 }
+.g {
+  cursor: context-menu;
+}
 a { color: #000; text-decoration: none;}
 a:active {
     border-style: outset;
 }
-a:first-child::before {
-  content: ' ';
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 2;
-}
-a:last-child::before {
-  content: ' ';
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 1;
+
+#card-article {
+  height: 100%;
 }
 
 
 .card-article:hover a:first-child:not(:hover) {
   color: rgba(0,0,0,0.4);
+}
+.g {
+  height: 100%;
+  padding: 1.7rem 1.5rem;
+  box-sizing: border-box;
 }
 
 /* focus styles */
@@ -110,7 +124,27 @@ a:last-child:focus {
 #card-footer {
     position: absolute;
     bottom: 0;
+    right: 30px;
 }
+
+#card-footer-opt {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#edit,#delete {
+  padding: 0;
+  margin: 10px 15px 0 0;
+  border-width: 0;
+  background: #fff;
+  color: #F21D1D;
+  font-size: 1.3em;
+  cursor: pointer;
+}
+#edit:hover {
+  cursor: pointer;
+}
+
  a:hover, a:focus, a:active {
       text-decoration: none;
       color: #000;
@@ -128,7 +162,8 @@ a:last-child:focus {
 	color:#FFF;
 	border-radius:50px;
 	text-align:center;
-	box-shadow: 2px 2px 3px #999;
+  box-shadow: 2px 2px 3px #999;
+  z-index:1;
 }
 .float:focus{
   color: #029AE5;

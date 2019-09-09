@@ -83,6 +83,10 @@ ul a{
     background: #4F62E8;
     cursor: pointer;
 }
+.option input#comment {
+    background: #7CEBBE;
+    cursor: context-menu;
+}
 .content {
     border-bottom: 1px solid #777;
 }
@@ -106,6 +110,10 @@ h4#user_name {
 .option.flag {
     justify-content: flex-start;
     margin-bottom: 2em;
+}
+.option.flag.comment {
+    justify-content: flex-end;
+    margin-bottom: 0;
 }
 .flag .btn {
     border-width: 0;
@@ -131,6 +139,7 @@ h4#user_name {
     color: #000;
     grid-column: 1 / -1;
 }
+
 
 
 .article-card:hover {
@@ -173,4 +182,45 @@ form input.btn{
     color: #fff;
     background: #4F62E8;
     cursor: pointer;
+}
+
+
+/* model */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 20% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  max-width: 400px;
+}
+
+.modal-content.flag {
+    max-width: 600px;
+}
+textarea[name="flag"]::placeholder {
+    font-size: 1.3em;
+}
+
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
