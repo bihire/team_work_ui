@@ -141,8 +141,8 @@ a:last-child:focus {
   font-size: 1.3em;
   cursor: pointer;
 }
-#edit:hover {
-  cursor: pointer;
+.btn:focus {
+  outline: none;
 }
 
  a:hover, a:focus, a:active {
