@@ -10,7 +10,7 @@ body {
     margin: 0;
 }
 
-.container {
+.container-article {
     padding: 1em 0 1em 0;
     max-width: 873px;
     /* border: 1px solid red; */
