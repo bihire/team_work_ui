@@ -6,10 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/add_story.css">
+    <link rel="stylesheet" href="css/navbar.css">
 
     <title>Document</title>
 </head>
+<a href="#" class="float">
+    <i class="fa fa-plus my-float"></i>
+</a>
+<header>
+    <div class="container">
 
+        <h1 class="logo">Team<span>Work</span></h1>
+
+        <nav class="site-nav">
+            <ul>
+                <li><a href="" id="side-nav-item"><i class="fa fa-home site-nav--icon"></i>My dashboard</a></li>
+                <li><a href="" id="side-nav-item"><i class="fa fa-flag site-nav--icon"></i>Flagged</a></li>
+                <li><a href="" id="side-nav-item"><i class="fa fa-info site-nav--icon"></i>About</a></li>
+                <li><a href="" id="side-nav-item"><i class="fa fa-envelope site-nav--icon"></i>logout</a></li>
+            </ul>
+        </nav>
+
+        <div class="menu-toggle">
+            <div class="hamburger"></div>
+        </div>
+
+    </div>
+</header>
 <body>
     <div class="containe">
         <!-- <h2 class="title">Add an article</h2> -->
@@ -18,20 +41,20 @@
         <form action="/stories" method="post">
             <div class="row">
                 <label for="title">Title</label>
-                <input type="text" name="title" placeholder="title">
+                <input type="text" name="title" placeholder="title"  autocomplete="off">
             </div>
 
             <div class="row">
                 <div class="input-field">
                     <label for="title">Categories</label>
-                    <input type="text" name="category" placeholder="electronics, food, medecine">
+                    <input type="text" name="category" placeholder="electronics, food, medecine"  autocomplete="off">
                 </div>
             </div>
 
             <div class="row">
                 <div class="input-field">
                     <h4>More about the article:</h4>
-                    <textarea name="body"></textarea>
+                    <textarea name="body" autocomplete="off"></textarea>
                 </div>
             </div>
             <div class="bro">
@@ -41,7 +64,7 @@
             
         </form>
     </div>
-
+    <script src="js/navbar.js"></script>
 </body>
 
 </html>

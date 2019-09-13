@@ -4,12 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/article_detail.css">
+    <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
-<body>
+<a href="#" class="float">
+    <i class="fa fa-plus my-float"></i>
+</a>
+<header>
     <div class="container">
+
+        <h1 class="logo">Team<span>Work</span></h1>
+
+        <nav class="site-nav">
+            <ul>
+                <li><a href="" id="side-nav-item"><i class="fa fa-home site-nav--icon"></i>My dashboard</a></li>
+                <li><a href="" id="side-nav-item"><i class="fa fa-flag site-nav--icon"></i>Flagged</a></li>
+                <li><a href="" id="side-nav-item"><i class="fa fa-info site-nav--icon"></i>About</a></li>
+                <li><a href="" id="side-nav-item"><i class="fa fa-envelope site-nav--icon"></i>logout</a></li>
+            </ul>
+        </nav>
+
+        <div class="menu-toggle">
+            <div class="hamburger"></div>
+        </div>
+
+    </div>
+</header>
+<body>
+  
+
+    <!-- The Modal delete -->
+    <div id="myModal" class="modal">
+    
+        <!-- Modal content -->
+        <div class="modal-content">
+            <p>Are you sure you want to delete this article?</p>
+            <div class="option">
+            
+                <button class="btn" id="edit">Delete</button>
+                <button class="btn close" id="cancel">Cancel</button>
+            
+            </div>
+        </div>
+    
+    </div>
+
+    <!-- The Modal flag -->
+    <div id="myFlagModal" class="modal">
+    
+        <!-- Modal content -->
+        <div class="modal-content flag">
+            <div class="row">
+                <div class="input-field">
+                    <!-- <h4>What's wrong with this article?</h4> -->
+                    <textarea name="flag" placeholder="What is wrong?"></textarea>
+                </div>
+            </div>
+            <div class="option">
+    
+                <button class="btn" id="edit">Flag</button>
+                <button class="btn close" id="cancel">Cancel</button>
+    
+            </div>
+        </div>
+    
+    </div>
+    <div class="container-article">
         <div class="header">
             <div class="author">
                 written by boris
@@ -23,7 +86,7 @@
                 <div class="option">
                     
                     <button class="btn" id="edit"><i class="fa fa-edit"></i>  Edit</button>
-                    <button class="btn" id="cancel"><i class="fa fa-trash"></i> Cancel</button>
+                    <button class="btn myBtn" id="cancel"><i class="fa fa-trash"></i> Cancel</button>
                                         
                 </div>
                 <div class="title">
@@ -51,7 +114,7 @@
 
                 <div class="option flag">
 
-                    <button class="btn" id="flag"><i class="fa fa-flag"></i>  Report this article</button>
+                    <button class="btn flag" id="flag"><i class="fa fa-flag"></i>  Report this article</button>
                 </div>
                 
             </div>
@@ -61,11 +124,11 @@
                     <form action="/stories" method="post">
                         <div class="row">
 
-                            <input type="text" name="title" placeholder="comment">
+                            <input type="text" name="comment" placeholder="comment"  autocomplete="off">
                         </div>
                     <div class="option">
                   
-                        <input type="submit" value="Comment" class="btn" id="cancel">
+                        <input type="submit" value="Comment" class="btn" id="comment">
                     </div>
                     </form>
                 </div>
@@ -77,6 +140,10 @@
                         <p id="comment_detail">
                             bro this web app is fire
                         </p>
+                        <div class="option flag comment">
+                        
+                            <button class="btn flag" id="flag"><i class="fa fa-flag"></i> Report this</button>
+                        </div>
                     </div>
 
                     <div class="all_comments-item">
@@ -86,10 +153,17 @@
                         <p id="comment_detail">
                             bro this web app is fire
                         </p>
+                        <div class="option flag comment">
+                        
+                            <button class="btn flag" id="flag"><i class="fa fa-flag"></i> Report this</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="js/article_detail.js"></script>
+    <script src="js/article_detail_flag.js"></script>
+    <script src="js/navbar.js"></script>
 </body>
 </html>
