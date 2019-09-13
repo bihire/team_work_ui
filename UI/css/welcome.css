@@ -20,10 +20,11 @@ a:hover
 .container {
      width: 60%;
     height: fit-content;
-   position: absolute;
+    margin: auto;
+   /* position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
 }
 .card {
     position: relative;
@@ -157,4 +158,44 @@ input#email,#username{
 span {
     background: orange;
     color: black;
+}
+@media only screen and (max-width: 1013px) {
+    .card {
+        flex-direction: column;
+        width: 90%;
+        max-width: 360px;
+        margin: auto;
+    }
+    .card-item,.card-form {
+        width: 100%;
+    }
+    .card-item {
+        height: fit-content;
+    }
+    .card-item-content {
+        width: fit-content;
+        position: relative;
+    height: fit-content;
+    top: 0;
+    left: 50%;
+      transform: translate(-50%, -50%);
+      /* padding: 10px 30px 6px 25px; */
+      font-size: 18px;
+      /* border-radius: 25px; */
+      box-shadow:none;
+      
+      background: #F20732;
+      color: #fff;
+    }
+    .container {
+        width: 100%;
+    }
+    .card-item-content:hover {
+    background: #F20732;
+    /* border: 1px solid #F20732; */
+    box-sizing: content-box;
+    }
+    #signin,#signup {
+        color: #fff;
+    }
 }

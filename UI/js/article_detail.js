@@ -68,3 +68,10 @@ const handleDisplayMatches = function () {
 const commentField = document.querySelector('input[name="comment"]');
 
 commentField.addEventListener('keyup', handleDisplayMatches);
+
+
+var link = document.getElementById("edit")
+link.onclick = function (e) {
+    e.preventDefault()
+    window.location.href = "./edit_article.html";
+};
