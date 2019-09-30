@@ -84,6 +84,12 @@ header::after {
   text-transform: capitalize;
   text-decoration: none;
 }
+ul li a:hover {
+    color: #F21F0C;
+}
+ul li a:focus {
+    color: #F21F0C;
+}
 /* 
 #side-nav-item {
   background: red;

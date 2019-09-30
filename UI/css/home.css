@@ -132,7 +132,7 @@ a:last-child:focus {
     top: 0;
     right: 0;
 }
-#edit-icon,#delete-icon {
+#edit-icon,#delete-icon,#ignore-icon {
   padding: 0;
   margin: 10px 15px 0 0;
   border-width: 0;
@@ -158,7 +158,7 @@ a:last-child:focus {
 	height:60px;
 	bottom:40px;
 	right:40px;
-	background-color:#fff;
+	background-color:#2953A6;
 	color:#FFF;
 	border-radius:50px;
 	text-align:center;
@@ -166,13 +166,18 @@ a:last-child:focus {
   z-index:1;
 }
 .float:focus{
-  color: #029AE5;
+  /* color: #029AE5;
   border-width: 0;
   border: 2px solid #029AE5;
-  background: #fff;
+  background: #fff; */
+  border: 0;
+
 }
+/* .float:focus .my-float{
+  color: #008EFA;
+} */
 
 .my-float{
   margin-top:22px;
-  color: #029AE5;
+  color: #fff;
 }

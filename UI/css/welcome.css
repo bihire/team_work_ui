@@ -3,7 +3,8 @@
 body {
     margin: 0;
     padding: 0;
-    background: #102D40;
+    background: #fff;
+    /* background: #102D40; */
     font-family: 'Roboto', sans-serif;
 }
 a {
@@ -20,11 +21,11 @@ a:hover
 .container {
      width: 60%;
     height: fit-content;
-    margin: auto;
-   /* position: absolute;
+    /* margin: auto; */
+   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); */
+  transform: translate(-50%, -50%);
 }
 .card {
     position: relative;
@@ -37,7 +38,7 @@ a:hover
     height: 300px;
 }
 .card-item {
-    background: #020E26;
+    background: #011640;
     position: relative;
 }
 .card-form {
@@ -104,16 +105,17 @@ input#email,#username{
       font-size: 18px;
       /* border-radius: 25px; */
       box-shadow:none;
-      background: #F20732;
+      /* background: #F20732; */
+      background: #008EFA;
       color: #fff;
 }
 .card-item-content:hover {
     background: #fff;
-    border: 1px solid #F20732;
+    /* border: 1px solid #008EFA; */
     box-sizing: border-box;
 }
 .card-item-content:hover a {
-    color: #F20732;
+    color: #008EFA;
 }
 .forget {
     font-size: .7em;
@@ -148,7 +150,7 @@ input#email,#username{
 }
 .welcome-info {
     text-align: center;
-    color: #fff;
+    color: #000;
 }
 .note {
     font-size: 18px;
@@ -160,6 +162,13 @@ span {
     color: black;
 }
 @media only screen and (max-width: 1013px) {
+    body {
+        background: #fff;
+    }
+    .welcome-info {
+    text-align: center;
+    color: #000;
+}
     .card {
         flex-direction: column;
         width: 90%;
@@ -171,6 +180,7 @@ span {
     }
     .card-item {
         height: fit-content;
+        background: none;
     }
     .card-item-content {
         width: fit-content;
@@ -184,7 +194,8 @@ span {
       /* border-radius: 25px; */
       box-shadow:none;
       
-      background: #F20732;
+      background: #007FE0;
+      /* background: #F20732; */
       color: #fff;
     }
     .container {

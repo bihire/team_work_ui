@@ -15,7 +15,7 @@ body {
     max-width: 873px;
     /* border: 1px solid red; */
     margin: auto;
-    margin-top: 200px;
+    margin-top: 120px;
 
 }
 .header{
@@ -64,6 +64,12 @@ ul {
 }
 ul li{
     margin-bottom: 0.2em;
+}
+ul li a:hover {
+    color: #F21F0C;
+}
+ul li a:focus {
+    color: #F21F0C;
 }
 
 ul a{
