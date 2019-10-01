@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,44 +38,42 @@
 
     </div>
 </header>
+
 <body>
-  
+
 
     <!-- The Modal delete -->
     <div id="myModal" class="modal">
-    
+
         <!-- Modal content -->
         <div class="modal-content">
             <p>Are you sure you want to delete this article?</p>
             <div class="option">
-            
+
                 <button class="btn" id="delete">Delete</button>
                 <button class="btn close" id="cancel">Cancel</button>
-            
+
             </div>
         </div>
-    
+
     </div>
 
-    <!-- The Modal flag -->
     <div id="myFlagModal" class="modal">
-    
-        <!-- Modal content -->
+
         <div class="modal-content flag">
             <div class="row">
                 <div class="input-field">
-                    <!-- <h4>What's wrong with this article?</h4> -->
                     <textarea name="flag" placeholder="What is wrong?"></textarea>
                 </div>
             </div>
             <div class="option">
-    
+
                 <button class="btn" id="flag-sure">Flag</button>
                 <button class="btn close" id="cancel">Cancel</button>
-    
+
             </div>
         </div>
-    
+
     </div>
     <div class="container-article">
         <div class="header">
@@ -88,10 +87,10 @@
         <div class="container-prime">
             <div class="content">
                 <div class="option">
-                    
-                    <button class="btn" id="edit"><i class="fa fa-edit"></i>  Edit</button>
+
+                    <button class="btn" id="edit"><i class="fa fa-edit"></i> Edit</button>
                     <button class="btn myBtn" id="cancel"><i class="fa fa-trash"></i> Cancel</button>
-                                        
+
                 </div>
                 <div class="title">
                     Lorem, ipsum dolor sit amet consectetur adipisicing.
@@ -101,26 +100,31 @@
                     <div class="category-item">
                         <ul>
                             <li><a href="./get_by_category.html"># networking</a></li>
-                            <li><a href="#"># internet speed</a></li>
-                            <li><a href="#"># fast life</a></li>
-                            <li><a href="#"># not really</a>y</li>
+                            <li><a href="#/"># internet speed</a></li>
+                            <li><a href="#/"># fast life</a></li>
+                            <li><a href="#/"># not really</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br />Amet fuga aspernatur ducimus ullam voluptates
-                    tempore architecto asperiores aliquid accusamus ut dicta dolores dolor iure quis earum natus cupiditate cumque
-                    officiis minima repudiandae distinctio aut, nostrum quia dolore! Facere consectetur hic harum fugiat optio maiores
-                    ipsa suscipit! Cupiditate quidem necessitatibus, animi voluptas inventore ea quo magni perspiciatis vero quia!
-                    Repellat nesciunt unde accusamus a quibusdam at voluptatum reiciendis commodi vel dignissimos. Quidem dicta sint
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br />Amet fuga aspernatur ducimus ullam
+                    voluptates
+                    tempore architecto asperiores aliquid accusamus ut dicta dolores dolor iure quis earum natus
+                    cupiditate cumque
+                    officiis minima repudiandae distinctio aut, nostrum quia dolore! Facere consectetur hic harum fugiat
+                    optio maiores
+                    ipsa suscipit! Cupiditate quidem necessitatibus, animi voluptas inventore ea quo magni perspiciatis
+                    vero quia!
+                    Repellat nesciunt unde accusamus a quibusdam at voluptatum reiciendis commodi vel dignissimos.
+                    Quidem dicta sint
                     necessitatibus eligendi fuga aliquam ullam iste dolores.
                 </div>
 
                 <div class="option flag">
 
-                    <button class="btn flag" id="flag"><i class="fa fa-flag"></i>  Report this article</button>
+                    <button class="btn flag" id="flag"><i class="fa fa-flag"></i> Report this article</button>
                 </div>
-                
+
             </div>
             <div class="comment">
                 <div class="add_comment">
@@ -128,12 +132,12 @@
                     <form action="/stories" method="post">
                         <div class="row">
 
-                            <input type="text" name="comment" placeholder="comment"  autocomplete="off">
+                            <input type="text" name="comment" placeholder="comment" autocomplete="off">
                         </div>
-                    <div class="option">
-                  
-                        <input type="submit" value="Comment" class="btn" id="comment">
-                    </div>
+                        <div class="option">
+
+                            <input type="submit" value="Comment" class="btn" id="comment">
+                        </div>
                     </form>
                 </div>
                 <div class="all_comments">
@@ -145,7 +149,7 @@
                             bro this web app is fire
                         </p>
                         <div class="option flag comment">
-                        
+
                             <button class="btn flag" id="flag"><i class="fa fa-flag"></i> Report this</button>
                         </div>
                     </div>
@@ -158,7 +162,7 @@
                             bro this web app is fire
                         </p>
                         <div class="option flag comment">
-                        
+
                             <button class="btn flag" id="flag"><i class="fa fa-flag"></i> Report this</button>
                         </div>
                     </div>
@@ -170,4 +174,5 @@
     <script src="js/article_detail_flag.js"></script>
     <script src="js/navbar.js"></script>
 </body>
+
 </html>

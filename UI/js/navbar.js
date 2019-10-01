@@ -1,9 +1,3 @@
-// $('.menu-toggle').click(function () {
-
-//     $('.site-nav').toggleClass('site-nav--open', 500);
-//     $(this).toggleClass('open');
-
-// })
 var el = document.querySelector('.menu-toggle');
 
 el.onclick = function () {
