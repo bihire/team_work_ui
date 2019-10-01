@@ -1,7 +1,3 @@
-
- /* nav bar */
- /* colors -> https://coolors.co/e54b4b-ebebd3-464655-e4b363-e8e9eb */
-
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
 
 
@@ -9,7 +5,6 @@
   width: 95%;
   max-width: 1000px;
   margin: 0 auto;
-  /* padding: 15px 0 15px 0; */
 }
 
 header {
@@ -54,12 +49,10 @@ header::after {
   clip-path: circle(0px at top right);
   transition: clip-path ease-in-out 700ms;
   z-index: 1;
-/*   display: none; */
 }
 
 .site-nav--open {
   clip-path: circle(250% at top right);
-/*   display: block; */
 }
 
 .site-nav ul {
@@ -90,14 +83,8 @@ ul li a:hover {
 ul li a:focus {
     color: #F21F0C;
 }
-/* 
-#side-nav-item {
-  background: red;
-} */
 .site-nav li:hover {
-  /* background: #E4B363;    */
   color: #464655;
-  /* border: 1px solid red; */
 }
 
 .site-nav--icon {

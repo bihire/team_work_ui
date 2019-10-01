@@ -2,8 +2,6 @@ const signin = document.getElementById('signin')
 const signup = document.getElementById('signup')
 
 const signi = function () {
-    // const signinClass = document.getElementsByClassName('signIn')[0]
-    // signinClass.fadeOut(300).removeClass('signIn')
     var s = document.getElementsByClassName('signIn')[0].style;
     s.opacity = 1;
     function fade() { 
@@ -20,8 +18,6 @@ const signi = function () {
     console.log('signin')
 }
 const signu = function () {
-    // const signinClass = document.getElementsByClassName('signIn')[0]
-    // signinClass.fadeOut(300).removeClass('signIn')
     var s = document.getElementsByClassName('signUp')[0].style;
     s.opacity = 1;
     function fade() {

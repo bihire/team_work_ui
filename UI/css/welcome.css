@@ -4,7 +4,6 @@ body {
     margin: 0;
     padding: 0;
     background: #fff;
-    /* background: #102D40; */
     font-family: 'Roboto', sans-serif;
 }
 a {
@@ -21,7 +20,6 @@ a:hover
 .container {
      width: 60%;
     height: fit-content;
-    /* margin: auto; */
    position: absolute;
   top: 50%;
   left: 50%;
@@ -72,8 +70,8 @@ input:focus {
 }
 
 input::-webkit-input-placeholder {
-     color: white; /*Change the placeholder color*/
-     opacity: 0.5; /*Change the opacity between 0 and 1*/
+     color: white;
+     opacity: 0.5;
 }
 input#email,#username{
     margin-bottom: 4px;
@@ -103,15 +101,12 @@ input#email,#username{
       transform: translate(-50%, -50%);
       padding: 10px 30px 6px 25px;
       font-size: 18px;
-      /* border-radius: 25px; */
       box-shadow:none;
-      /* background: #F20732; */
       background: #008EFA;
       color: #fff;
 }
 .card-item-content:hover {
     background: #fff;
-    /* border: 1px solid #008EFA; */
     box-sizing: border-box;
 }
 .card-item-content:hover a {
@@ -145,7 +140,6 @@ input#email,#username{
 }
 .welcome {
     font-size: 34px;
-    /* font-weight: 800; */
     font-family: 'Manjari', sans-serif;
 }
 .welcome-info {
@@ -189,13 +183,10 @@ span {
     top: 0;
     left: 50%;
       transform: translate(-50%, -50%);
-      /* padding: 10px 30px 6px 25px; */
       font-size: 18px;
-      /* border-radius: 25px; */
       box-shadow:none;
       
       background: #007FE0;
-      /* background: #F20732; */
       color: #fff;
     }
     .container {
@@ -203,7 +194,6 @@ span {
     }
     .card-item-content:hover {
     background: #F20732;
-    /* border: 1px solid #F20732; */
     box-sizing: content-box;
     }
     #signin,#signup {
