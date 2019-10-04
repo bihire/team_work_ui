@@ -13,13 +13,11 @@ body {
 .container-article {
     padding: 1em 0 1em 0;
     max-width: 873px;
-    /* border: 1px solid red; */
     margin: auto;
-    margin-top: 200px;
+    margin-top: 120px;
 
 }
 .header{
-    /* border-style: dotted; */
     display: flex;
     justify-content: space-between;
     border: 1.2px dotted #000;
@@ -35,10 +33,8 @@ body {
     font-family: 'Alegreya', 'Times New Roman';
     line-height: 1.25;
     font-weight: 700;
-    /* font-size: 40px; */
     color: #333;
     font-size: 2.75rem;
-    /* margin-bottom: 2rem; */
 }
 .description {
     margin-top: 2rem;
@@ -64,6 +60,12 @@ ul {
 }
 ul li{
     margin-bottom: 0.2em;
+}
+ul li a:hover {
+    color: #F21F0C;
+}
+ul li a:focus {
+    color: #F21F0C;
 }
 
 ul a{
@@ -152,9 +154,6 @@ form input {
     position: relative;
         width: 100%;
         padding: 1em;
-        /* border-radius: 30px; */
-        /* border: 1px solid black; */
-     
         outline: none;
         position: relative;
         box-sizing: border-box;
@@ -184,29 +183,25 @@ form input.btn{
     cursor: pointer;
 }
 
-
-/* model */
-/* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  display: none;
+  position: fixed;
+  z-index: 1;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
 }
 
-/* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
-  margin: 20% auto; /* 15% from the top and centered */
+  margin: 20% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 80%;
   max-width: 400px;
 }
 
@@ -217,8 +212,6 @@ form input.btn{
 textarea[name="flag"]::placeholder {
     font-size: 1.3em;
 }
-
-
 .close:hover,
 .close:focus {
   color: black;

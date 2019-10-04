@@ -11,7 +11,6 @@ body {
 .containe {
     padding: 1em;
     max-width: 873px;
-    /* border: 1px solid red; */
     margin: auto;
     margin-top: 200px;
 
@@ -36,9 +35,6 @@ form input {
     position: relative;
         width: 100%;
         padding: 1em;
-        /* border-radius: 30px; */
-        /* border: 1px solid black; */
-     
         outline: none;
         position: relative;
         box-sizing: border-box;
@@ -67,10 +63,3 @@ form input.btn{
     background: #4F62E8;
     cursor: pointer;
 }
-/* .bro {
-    display: flex;
-    justify-content: space-between;
-} */
-    /* form {
-        border: 1px solid red;
-    } */

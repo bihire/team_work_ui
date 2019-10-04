@@ -3,7 +3,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: #102D40;
+    background: #fff;
     font-family: 'Roboto', sans-serif;
 }
 a {
@@ -20,11 +20,10 @@ a:hover
 .container {
      width: 60%;
     height: fit-content;
-    margin: auto;
-   /* position: absolute;
+   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); */
+  transform: translate(-50%, -50%);
 }
 .card {
     position: relative;
@@ -37,7 +36,7 @@ a:hover
     height: 300px;
 }
 .card-item {
-    background: #020E26;
+    background: #011640;
     position: relative;
 }
 .card-form {
@@ -71,8 +70,8 @@ input:focus {
 }
 
 input::-webkit-input-placeholder {
-     color: white; /*Change the placeholder color*/
-     opacity: 0.5; /*Change the opacity between 0 and 1*/
+     color: white;
+     opacity: 0.5;
 }
 input#email,#username{
     margin-bottom: 4px;
@@ -102,18 +101,16 @@ input#email,#username{
       transform: translate(-50%, -50%);
       padding: 10px 30px 6px 25px;
       font-size: 18px;
-      /* border-radius: 25px; */
       box-shadow:none;
-      background: #F20732;
+      background: #008EFA;
       color: #fff;
 }
 .card-item-content:hover {
     background: #fff;
-    border: 1px solid #F20732;
     box-sizing: border-box;
 }
 .card-item-content:hover a {
-    color: #F20732;
+    color: #008EFA;
 }
 .forget {
     font-size: .7em;
@@ -143,12 +140,11 @@ input#email,#username{
 }
 .welcome {
     font-size: 34px;
-    /* font-weight: 800; */
     font-family: 'Manjari', sans-serif;
 }
 .welcome-info {
     text-align: center;
-    color: #fff;
+    color: #000;
 }
 .note {
     font-size: 18px;
@@ -160,6 +156,13 @@ span {
     color: black;
 }
 @media only screen and (max-width: 1013px) {
+    body {
+        background: #fff;
+    }
+    .welcome-info {
+    text-align: center;
+    color: #000;
+}
     .card {
         flex-direction: column;
         width: 90%;
@@ -171,6 +174,7 @@ span {
     }
     .card-item {
         height: fit-content;
+        background: none;
     }
     .card-item-content {
         width: fit-content;
@@ -179,12 +183,10 @@ span {
     top: 0;
     left: 50%;
       transform: translate(-50%, -50%);
-      /* padding: 10px 30px 6px 25px; */
       font-size: 18px;
-      /* border-radius: 25px; */
       box-shadow:none;
       
-      background: #F20732;
+      background: #007FE0;
       color: #fff;
     }
     .container {
@@ -192,7 +194,6 @@ span {
     }
     .card-item-content:hover {
     background: #F20732;
-    /* border: 1px solid #F20732; */
     box-sizing: content-box;
     }
     #signin,#signup {

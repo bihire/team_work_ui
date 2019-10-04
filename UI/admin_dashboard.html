@@ -22,9 +22,9 @@
 <header>
     <div class="container">
 
-    <a href="./home.html">
-        <h1 class="logo">Team<span>Work</span></h1>
-    </a>
+        <a href="./home.html">
+            <h1 class="logo">Team<span>Work</span></h1>
+        </a>
 
         <nav class="site-nav">
             <ul>
@@ -43,159 +43,174 @@
 
     </div>
 </header>
+
 <body>
-<div class="containerz">
-    <div class="flagged-article">
-        <div class="article-container-header">
-            <div class="article-container-title">
-                <h4>Flagged Articles</h4>
-        
-            </div>
-            <div class="see-all">
-                <a href="./flagged_article.html">
-                <h4>see all</h4>
+    <!-- The Modal delete -->
+    <div id="myModal" class="modal">
 
-                </a>
+        <!-- Modal content -->
+        <div class="modal-content">
+            <p>Are you sure you want to delete this article?</p>
+            <div class="option">
+
+                <button class="btn" id="edit">Delete</button>
+                <button class="btn close" id="cancel">Cancel</button>
+
             </div>
-        </div>
-        <div class="article-card">
-            <div id="card-article">
-                <div id="card-footer-opt">
-        
-                    <button class="btn flag" id="flag"><i class="fa fa-thumbs-down"></i> Ignore</button>
-                    <button class="btn flag" id="flag"><i class="fa fa-trash"></i> Delete</button>
-        
-                </div><a href="https://codepen.io/seancurtis">
-                    <div class="g" <span class="text">
-                        <h3 class="article-card-title">Article title</h3>
-        
-                        Turn emails into tasks ready and waiting to be worked on by the team. Next steps and directions
-                        never get lost, inbox....
-                        </span>
-                    </div>
-                    <!-- <a id="no" href="https://twitter.com/seancurtis"><span class="text">#seancurtis</span></a> -->
-                </a>
-            </div>
-        
-        
         </div>
 
-        <div class="article-card">
-            <div id="card-article">
-                <div id="card-footer-opt">
-        
-                    <button class="btn flag" id="flag"><i class="fa fa-thumbs-down"></i> Ignore</button>
-                    <button class="btn flag" id="flag"><i class="fa fa-trash"></i> Delete</button>
-        
-                </div><a href="https://codepen.io/seancurtis">
-                    <div class="g" <span class="text">
-                        <h3 class="article-card-title">Article title</h3>
-        
-                        Turn emails into tasks ready and waiting to be worked on by the team. Next steps and directions
-                        never get lost, inbox....
-                        </span>
-                    </div>
-                    <!-- <a id="no" href="https://twitter.com/seancurtis"><span class="text">#seancurtis</span></a> -->
-                </a>
-            </div>
-        
-        
-        </div>
-
-        <div class="article-card">
-            <div id="card-article">
-                <div id="card-footer-opt">
-        
-                    <button class="btn flag" id="flag"><i class="fa fa-thumbs-down"></i> Ignore</button>
-                    <button class="btn flag" id="flag"><i class="fa fa-trash"></i> Delete</button>
-        
-                </div><a href="https://codepen.io/seancurtis">
-                    <div class="g" <span class="text">
-                        <h3 class="article-card-title">Article title</h3>
-        
-                        Turn emails into tasks ready and waiting to be worked on by the team. Next steps and directions
-                        never get lost, inbox....
-                        </span>
-                    </div>
-                    <!-- <a id="no" href="https://twitter.com/seancurtis"><span class="text">#seancurtis</span></a> -->
-                </a>
-            </div>
-        
-        
-        </div>
-
-        <div class="article-card">
-            <div id="card-article">
-                <div id="card-footer-opt">
-        
-                    <button class="btn flag" id="flag"><i class="fa fa-thumbs-down"></i> Ignore</button>
-                    <button class="btn flag" id="flag"><i class="fa fa-trash"></i> Delete</button>
-        
-                </div><a href="https://codepen.io/seancurtis">
-                    <div class="g" <span class="text">
-                        <h3 class="article-card-title">Article title</h3>
-        
-                        Turn emails into tasks ready and waiting to be worked on by the team. Next steps and directions
-                        never get lost, inbox....
-                        </span>
-                    </div>
-                    <!-- <a id="no" href="https://twitter.com/seancurtis"><span class="text">#seancurtis</span></a> -->
-                </a>
-            </div>
-        
-        
-        </div>
-      
     </div>
-
-
-    <div class="comment">
-        <div class="article-container-header">
-            <div class="article-container-title">
-                <h4>Flagged Comments</h4>
-        
-            </div>
-            <div class="see-all">
-                <a href="./flagged_comments.html">
-                <h4>see all</h4>
-
-                </a>
-            </div>
-        </div>
-        <div class="all_comments">
-            <div class="all_comments-item">
-                <h4 id="user_name">
-                    bihire
-                </h4>
-                <p id="comment_detail">
-                    bro this web app is fire
-                </p>
-                <div class="option flag comment">
-    
-                    <button class="btn flag" id="flag"><i class="fa fa-thumbs-down"></i> Ignore</button>
-                    
-                    <button class="btn flag" id="flag"><i class="fa fa-trash"></i> Delete</button>
+    <div class="containerz">
+        <div class="flagged-article">
+            <div class="article-container-header">
+                <div class="article-container-title">
+                    <h4>Flagged Articles</h4>
 
                 </div>
+                <div class="see-all">
+                    <a href="./flagged_article.html">
+                        <h4>see all</h4>
+
+                    </a>
+                </div>
             </div>
-    
-            <div class="all_comments-item">
-                <h4 id="user_name">
-                    bihire
-                </h4>
-                <p id="comment_detail">
-                    bro this web app is fire
-                </p>
-                <div class="option flag comment">
-    
-                    <button class="btn flag" id="flag"><i class="fa fa-thumbs-down"></i> Ignore</button>
-                    <button class="btn flag" id="flag"><i class="fa fa-trash"></i> Delete</button>
+            <div class="article-card">
+                <div id="card-article">
+                    <div id="card-footer-opt">
+
+                        <button class="btn" id="ignore-icon"><i class="fa fa-thumbs-down"></i></button>
+                        <button class="btn" id="delete-icon"><i class="fa fa-trash"></i></button>
+
+                    </div><a href="./article_detail.html">
+                        <div class="g" class="text">
+                            <h3 class="article-card-title">Article title</h3>
+
+                            Turn emails into tasks ready and waiting to be worked on by the team. Next steps and
+                            directions
+                            never get lost, inbox....
+                        </div>
+                        
+                    </a>
+                </div>
+
+
+            </div>
+            <div class="article-card">
+                <div id="card-article">
+                    <div id="card-footer-opt">
+
+                        <button class="btn" id="ignore-icon"><i class="fa fa-thumbs-down"></i></button>
+                        <button class="btn" id="delete-icon"><i class="fa fa-trash"></i></button>
+
+                    </div><a href="./article_detail.html">
+                        <div class="g" class="text">
+                            <h3 class="article-card-title">Article title</h3>
+
+                            Turn emails into tasks ready and waiting to be worked on by the team. Next steps and
+                            directions
+                            never get lost, inbox....
+                        </div>
+                        
+                    </a>
+                </div>
+
+
+            </div>
+            <div class="article-card">
+                <div id="card-article">
+                    <div id="card-footer-opt">
+
+                        <button class="btn" id="ignore-icon"><i class="fa fa-thumbs-down"></i></button>
+                        <button class="btn" id="delete-icon"><i class="fa fa-trash"></i></button>
+
+                    </div><a href="./article_detail.html">
+                        <div class="g" class="text">
+                            <h3 class="article-card-title">Article title</h3>
+
+                            Turn emails into tasks ready and waiting to be worked on by the team. Next steps and
+                            directions
+                            never get lost, inbox....
+                        </div>
+                        
+                    </a>
+                </div>
+
+
+            </div>
+
+            <div class="article-card">
+                <div id="card-article">
+                    <div id="card-footer-opt">
+
+                        <button class="btn" id="ignore-icon"><i class="fa fa-thumbs-down"></i></button>
+                        <button class="btn" id="delete-icon"><i class="fa fa-trash"></i></button>
+
+                    </div><a href="./article_detail.html">
+                        <div class="g" class="text">
+                            <h3 class="article-card-title">Article title</h3>
+
+                            Turn emails into tasks ready and waiting to be worked on by the team. Next steps and
+                            directions
+                            never get lost, inbox....
+                        </div>
+                        
+                    </a>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        <div class="comment">
+            <div class="article-container-header">
+                <div class="article-container-title">
+                    <h4>Flagged Comments</h4>
+
+                </div>
+                <div class="see-all">
+                    <a href="./flagged_comments.html">
+                        <h4>see all</h4>
+
+                    </a>
+                </div>
+            </div>
+            <div class="all_comments">
+                <div class="all_comments-item">
+                    <h4 id="user_name">
+                        bihire
+                    </h4>
+                    <p id="comment_detail">
+                        bro this web app is fire
+                    </p>
+                    <div class="option flag comment">
+
+                        <button class="btn" id="ignore-icon"><i class="fa fa-thumbs-down"></i></button>
+                        <button class="btn" id="delete-icon"><i class="fa fa-trash"></i></button>
+
+                    </div>
+                </div>
+
+                <div class="all_comments-item">
+                    <h4 id="user_name">
+                        bihire
+                    </h4>
+                    <p id="comment_detail">
+                        bro this web app is fire
+                    </p>
+                    <div class="option flag comment">
+
+                        <button class="btn" id="ignore-icon"><i class="fa fa-thumbs-down"></i></button>
+                        <button class="btn" id="delete-icon"><i class="fa fa-trash"></i></button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
     <script src="js/navbar.js"></script>
+    <script src="js/author.js"></script>
+
 </body>
 
 </html>
